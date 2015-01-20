@@ -1,0 +1,104 @@
+.user-profile {
+  text-align: center;
+  min-height: 60vh;
+
+  .avatar {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+
+    .avatar-initials {
+      font-size: 1.5rem;
+      line-height: 4.5;
+    }
+  }
+  
+  .edit-avatar {
+    display: block;
+    font-size: 14px;
+    color: $grey;
+    margin-top: 10px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .profile-links {
+    margin: 2rem 0;
+    font-size: 16px;
+    line-height: 2;
+    color: $grey;
+   
+    .username {
+      font-size: 32px;
+      font-weight: 400;
+      color: $dark-grey;
+      margin-bottom: 2rem;
+      text-rendering: optimizeLegibility;
+    }
+
+    .has-icon svg {
+      fill: currentColor;
+      vertical-align: middle;
+      margin-right: 0.2rem;
+      margin-top: -2px;
+    }
+
+    li:not(.username) {
+      display: inline-block;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  .profile-bio {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+} // .user-profile
+
+.user-data {
+  background: $lightest-grey;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+
+  &:empty {
+    display: none;
+  }
+
+  > div {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
+} // .user-data
+
+.user-actions {
+  margin: 3rem 0;
+
+  a {
+    color: $primary-color;
+    margin-right: 1rem;
+
+    &:last-child,
+    &:only-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.user-profile-posts,
+.user-profile-comments {
+  margin-bottom: 2rem;
+}
+
+.user-edit {
+  position: relative;
+}

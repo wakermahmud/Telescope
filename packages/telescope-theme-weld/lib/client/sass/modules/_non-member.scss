@@ -1,0 +1,51 @@
+.non-member {
+  text-align: center;
+  font-weight: 400;
+  color: $dark-grey;
+  padding: 0 $padding;
+  display: block;
+  width: 100%;
+
+
+  + .spacer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 3px;
+    @include small {
+      font-size: 1.25rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    @include small {
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  .sign-up {
+    color: $primary-color;
+  }
+
+  .button {
+    max-width: 320px;
+    margin: 2rem auto;
+    font-size: 16px;
+  }
+
+  .text-button {
+    color: $grey;
+    font-size: 14px;
+  }
+}
