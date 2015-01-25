@@ -1,0 +1,4 @@
+primaryNav = [
+  'viewsMenu',
+  'adminMenu'
+];

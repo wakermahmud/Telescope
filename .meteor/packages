@@ -83,8 +83,9 @@ telescope-releases
 telescope-getting-started
 
 # Custom Packages
-telescope-theme-weld
 fastclick
 archive:jquery-dotdotdot
 multiply:iron-router-progress
 mystor:device-detection
+telescope-theme-base
+telescope-theme-hubble
