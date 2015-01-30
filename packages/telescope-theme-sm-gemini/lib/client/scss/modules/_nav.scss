@@ -1,15 +1,36 @@
 .header{
 	background-color: transparent;
+	background-image: url('http://c.jcket.com/images/stoneyroads/cover-news.jpg');
+	background-attachment: top;
+	background-position-y: -10px;
+	height: 260px;
+	border-bottom: 10px rgb(35, 204, 199) solid;
+	margin-bottom: 25px;
 	.logo{
 		text-transform: uppercase;
+		text-align: left;
 		@include small{
 			font-size: 18px;
 		}
 		@include medium-large{
-			font-size:24px;
+			font-size:135px;
+		}
+		&:after {
+			content: '/scopemount';
+			font-weight: bold;
+			font-size: 40px;
 		}
 	}
 }
+
+
+.header .logo,
+.nav {
+  position: relative;
+  top: 75%;
+}
+
+
 .nav{
 	>li{
 		>a, >div >a{
