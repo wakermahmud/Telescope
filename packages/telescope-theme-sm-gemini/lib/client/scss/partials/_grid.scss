@@ -31,24 +31,3 @@ $medium-break: 50em;
     @content;
   }
 }
-
-.content-wrapper{
-	padding: 0 10px;
-  @include small{
-    overflow-x: hidden;
-  }
-}
-.grid{
-	width:100%;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.grid-small, .at-form{
-  width: 100%;
-  @include medium-large{
-	 max-width:500px;
-  }
-	margin-left: auto;
-  margin-right: auto;
-}
