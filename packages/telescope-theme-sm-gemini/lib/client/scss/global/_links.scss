@@ -4,4 +4,12 @@ a{
     color: $text;
     font-weight: bold;
   }
+  &.post-author {
+  	font-size: 13px;
+  	text-transform: uppercase;
+    color: #AAAAAA;
+  }
+  &.comments-link {
+    color: #AAAAAA;
+  }
 }

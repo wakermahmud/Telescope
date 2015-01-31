@@ -8,6 +8,7 @@ Package.onUse(function (api) {
 
   api.use(
     [
+      'templating',
       'telescope-lib',
       'telescope-base',
       'telescope-theme-hubble',
@@ -27,6 +28,7 @@ Package.onUse(function (api) {
       'lib/client/scss/global/_links.scss',
 
       // modules
+      'lib/client/scss/modules/_layout.scss',
       'lib/client/scss/modules/_nav.scss',
       'lib/client/scss/modules/_mobile_nav.scss',
       'lib/client/scss/modules/_posts.scss',
@@ -37,9 +39,26 @@ Package.onUse(function (api) {
       'lib/client/scss/partials/_typography.scss',
 
       // screen
-      'lib/client/scss/screen.scss'
+      'lib/client/scss/screen.scss',
+
+      // overrides
+      'lib/client/templates/nav_mod.html',
+      'lib/client/templates/post_info_mod.html',
+
+      // customizations
+      'lib/client/scripts/base_gemini.js',
+
+      // images
+      'img/header-bg.jpg'
+
     ],
     'client'
   );
+
+  api.export([
+    'postModules',
+    'postHeading',
+    'postMeta'
+  ]);
 
 });
