@@ -6,6 +6,8 @@
 	box-shadow: -2px 1px 0px rgba(0,0,0,.1);
 	border-bottom: 0px;
 	margin-bottom: 20px;
+	border-top: 2px solid #e7eff2;
+	border-right: 2px solid #e7eff2;
 	&:first-child{
 		border-radius: 0px 0px 0px 0px;
 	}
@@ -77,4 +79,19 @@
 }
 .posts-list .post-thumbnail {
   margin-right: 20px;
+}
+
+// ----------------------------------- avatars ------------------------------------ //
+
+.avatar.avatar-circle {
+  border: 8px black;
+  border-radius: 50px;
+  border-style: ridge;
+  border-right-color: rgb(35, 204, 199);
+}
+.avatar .avatar-initials {
+  background-color: $green;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-family:"Montserrat", "Helvetica Neue", Helvetica, sans-serif;
 }
