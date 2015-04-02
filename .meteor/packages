@@ -26,9 +26,10 @@ meteorhacks:fast-render
 meteorhacks:subs-manager
 meteorhacks:npm
 
-aldeed:autoform
+aldeed:autoform@5.1.2
 aldeed:collection2
-aldeed:simple-schema
+aldeed:simple-schema@1.3.2
+aldeed:template-extension
 
 mrt:jquery-hotkeys
 mrt:cookies
@@ -46,9 +47,14 @@ rajit:bootstrap3-datepicker
 bengott:avatar
 jparker:gravatar
 tap:i18n
-useraccounts:unstyled@1.4.0
+useraccounts:unstyled@1.8.1
 tsega:bootstrap3-datetimepicker@3.1.3_1
 momentjs:moment
+aslagle:reactive-table
+aramk:tinycolor
+fortawesome:fontawesome
+fourseven:scss
+manuelschoebel:ms-seo
 
 # Testing
 
@@ -64,11 +70,13 @@ telescope-i18n
 # Telescope Packages (Optional)
 
 telescope-datetimepicker
+telescope-theme-base
 telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
+telescope-theme-hubble
 telescope-email
 telescope-embedly
 telescope-newsletter
@@ -82,12 +90,8 @@ telescope-post-by-feed
 telescope-releases
 telescope-getting-started
 telescope-subscribe-to-posts
+telescope-tagline-banner
+telescope-sitemap
+telescope-messages
 
 # Custom Packages
-fastclick
-archive:jquery-dotdotdot
-multiply:iron-router-progress
-mystor:device-detection
-telescope-theme-base
-telescope-theme-hubble
-telescope-theme-sm-gemini

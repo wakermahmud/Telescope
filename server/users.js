@@ -21,14 +21,14 @@ Accounts.onCreateUser(function(options, user){
   // set email on profile
   if (options.email)
     user.profile.email = options.email;
-    
+
   // if email is set, use it to generate email hash
   if (getEmail(user))
     user.email_hash = getEmailHash(user);
-  
+
   // set username on profile
-  if (!user.profile.name)
-    user.profile.name = user.username;
+  if (!user.profile.username)
+    user.profile.username = user.username;
 
   // create slug from username
   user.slug = slugify(getUserName(user));
@@ -39,14 +39,14 @@ Accounts.onCreateUser(function(options, user){
   // ------------------------------ Callbacks ------------------------------ //
 
   // run all post submit client callbacks on properties object successively
-  clog('// Start userCreatedCallbacks')
+  clog('// Start userCreatedCallbacks');
   user = userCreatedCallbacks.reduce(function(result, currentFunction) {
-    clog('// Running '+currentFunction.name+'…')
+    clog('// Running '+currentFunction.name+'…');
     return currentFunction(result);
   }, user);
-  clog('// Finished userCreatedCallbacks')
-  clog('// User object:')
-  clog(user)
+  clog('// Finished userCreatedCallbacks');
+  // clog('// User object:');
+  // clog(user);
 
   // ------------------------------ Analytics ------------------------------ //
 
@@ -57,11 +57,15 @@ Accounts.onCreateUser(function(options, user){
 
 
 Meteor.methods({
-  changeEmail: function (newEmail) {
+  changeEmail: function (userId, newEmail) {
+    var user = Meteor.users.findOne(userId);
+    if (can.edit(Meteor.user(), user) !== true) {
+      throw new Meteor.Error("Permission denied");
+    }
     Meteor.users.update(
-      Meteor.userId(),
+      userId,
       {$set: {
-          emails: [{address: newEmail}],
+          emails: [{address: newEmail, verified: false}],
           email_hash: Gravatar.hash(newEmail),
           // Just in case this gets called from somewhere other than /client/views/users/user_edit.js
           "profile.email": newEmail
@@ -69,12 +73,12 @@ Meteor.methods({
       }
     );
   },
-  numberOfPostsToday: function(){
-    console.log(numberOfItemsInPast24Hours(Meteor.user(), Posts));
-  },
-  numberOfCommentsToday: function(){
-    console.log(numberOfItemsInPast24Hours(Meteor.user(), Comments));
-  },
+  // numberOfPostsToday: function(){
+  //   console.log(numberOfItemsInPast24Hours(Meteor.user(), Posts));
+  // },
+  // numberOfCommentsToday: function(){
+  //   console.log(numberOfItemsInPast24Hours(Meteor.user(), Comments));
+  // },
   testBuffer: function(){
     // TODO
   },
