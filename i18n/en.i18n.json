@@ -16,7 +16,7 @@
   "my_account": "My Account",
   "view_profile": "View Profile",
   "edit_account": "Edit Account",
-  "view_your_profile": "View your profile.",
+  "view_your_profile": "View your profile",
   "edit_your_profile": "Edit your profile",
   
   //Main
@@ -191,6 +191,7 @@
   "display_name": "Display Name",
   "email": "Email",
   "bio": "Bio",
+  "city": "City",
   "twitter_username": "Twitter Username",
   "github_username": "GitHub Username",
   "site_url" : "Site URL",
