@@ -13,9 +13,20 @@
         border-radius: 0px 0px 0px 0px;
     }
 }
+// ------------------------------------ posts views nav ------------------------------------ //
+.posts-list-views{
+    background: none;
+    .menu-item{
+        text-transform: uppercase;
+    }
+}
 
 // ------------------------------ posts-list layout ------------------------------ //
 .posts-list {
+    .post-module {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
     .post-rank {
         display: none;
     }
@@ -23,7 +34,26 @@
         align-items: flex-start;
     }
 }
+// -------------------------------- post modules --------------------------------- //
 
+.post-module.post-rank {
+    margin: 0;
+}
+.post{
+    .icon{
+    }
+}
+.post-upvote {
+    .upvote-link {
+        color: $light-text;
+        &.voted {
+            i.icon-voted {
+                border: 1px solid $light-text;
+                color: $light-text;
+            }
+        }
+    }
+}
 // -------------------------------- post content --------------------------------- //
 .post-heading {
     margin-top: 25px;
@@ -36,6 +66,9 @@
             font-size: 30px;
         }
         font-weight:bold;
+        &:visited {
+            color: $text;
+        }
     }
 }
 .post-meta-item {
