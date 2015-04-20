@@ -39,17 +39,13 @@
 .post-module.post-rank {
     margin: 0;
 }
-.post{
-    .icon{
-    }
-}
 .post-upvote {
     .upvote-link {
         color: $light-text;
         &.voted {
             i.icon-voted {
                 border: 1px solid $light-text;
-                color: $light-text;
+                color: $crimson;
             }
         }
     }
