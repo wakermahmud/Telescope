@@ -28,7 +28,7 @@
         margin-right: 0px;
     }
     .post-rank {
-        display: none;
+        // display: none;
     }
     .post-content {
         align-items: flex-start;
@@ -83,10 +83,17 @@
 .post-meta {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 .post-commenters {
-    display: flex;
-    flex-direction: row;
+    display: none;
+}
+.discuss-link {
+    position: absolute;
+    right: 10px;
+    .icon {
+        font-size: 40px;
+    }
 }
 
 // -------------------------------- post tags --------------------------------- //
