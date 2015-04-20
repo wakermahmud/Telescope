@@ -69,6 +69,10 @@
         &:visited {
             color: $text;
         }
+        width: 920px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 .post-meta-item {
