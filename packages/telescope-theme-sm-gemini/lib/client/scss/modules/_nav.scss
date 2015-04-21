@@ -31,16 +31,17 @@
 			}
 		}
 		.secondary-nav {
-		  top: 142%;
+			top: 90%;
 	  	color:white;
 	  	>a, >.btn {
 	  			font-size:18px;
 	  			font-weight:normal;
-	  			text-transform: uppercase;
 	  		  font-style: italic;
 	  		  text-shadow: 0px -1px rgba(0, 0, 0, 0.5);
 	  	}
-
+	  	@include very-large {
+	  		top: 142%;
+	  	}
 		}
 		.header-submodule{
 	  	display: none;
@@ -49,5 +50,12 @@
 		  	border-bottom: 7px dotted #147875;
 	  	}
 		}
+		a.sign-in,
+		a.sign-up {
+		  color: $text;
+		  text-shadow: none;
+		}
+
 	}
 }
+
