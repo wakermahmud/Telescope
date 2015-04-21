@@ -42,6 +42,7 @@
 .post-upvote {
     .upvote-link {
         color: $light-text;
+        transform: scale(1.2);
         &.voted {
             i.icon-voted {
                 border: 1px solid $light-text;
