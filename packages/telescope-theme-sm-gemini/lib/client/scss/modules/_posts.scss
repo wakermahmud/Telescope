@@ -70,26 +70,42 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .post-domain {
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
 }
 .post-meta-item {
     font-size: 13px;
     font-weight: normal;
-    color: #AAAAAA;
+    color: $light-text;
 }
 .post-meta {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    a:link, a:visited, a:active {
+        color: $grey;
+    }
+    a:hover {
+        color: $crimson;
+    }
+    .discuss-link {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        .icon {
+            font-size: 50px;
+        }
+        .action-count {
+          font-size: 14px;
+      }
+    }
 }
 .post-commenters {
     display: none;
-}
-.discuss-link {
-    position: absolute;
-    right: 10px;
-    .icon {
-        font-size: 40px;
-    }
 }
 
 // -------------------------------- post tags --------------------------------- //

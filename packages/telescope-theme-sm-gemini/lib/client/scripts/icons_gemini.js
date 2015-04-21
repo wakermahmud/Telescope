@@ -17,7 +17,7 @@ icons = {
   twitter: "twitter",
   googleplus: "google-plus",
   linkedin: "linkedin-square",
-  comment: "star-o",
+  comment: "th-list",
   share: "share-square-o",
   more: "ellipsis-h",
   menu: "bars",

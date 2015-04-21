@@ -18,7 +18,7 @@ postHeading = [
     order: 10
   },
   {
-    template: 'postAuthor',
+    template: 'postDomain',
     order: 20
   },
   {
