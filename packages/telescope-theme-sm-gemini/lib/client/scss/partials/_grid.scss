@@ -32,7 +32,15 @@ $large-break: 90em;
     @content;
   }
 }
-@mixin very-large(){
+
+// ----------------------------------- custom ------------------------------------ //
+
+@mixin mid-section(){
+  @media screen and (min-width: $medium-break) and (max-width: $large-break) {
+    @content;
+  }
+}
+@mixin top-section(){
   @media screen and (min-width: $large-break) {
     @content;
   }
