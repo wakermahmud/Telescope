@@ -138,6 +138,19 @@
     display: none;
 }
 
+.post-body, .page-body {
+    font-size: 13px;
+    @include medium {
+        font-size: 15px;
+    }
+    @include large {
+        font-size: 16px;
+    }
+}
+.post.sticky {
+    background: orange;
+}
+
 // -------------------------------- post tags --------------------------------- //
 .post-category {
     background: orange;
@@ -218,6 +231,9 @@
     border-radius: 0px;
     &:hover {
         background: $green;
+    }
+    @include small {
+        font-size: 16px;
     }
     @include large {
         width: 20%;
