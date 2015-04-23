@@ -13,6 +13,9 @@
         border-radius: 0px 0px 0px 0px;
     }
 }
+.post-list-title, .page-title{
+    display: none;
+}
 // ------------------------------------ posts views nav ------------------------------------ //
 .posts-list-views{
     background: none;
@@ -148,7 +151,7 @@
     }
 }
 .post.sticky {
-    background: orange;
+    background: lightyellow;
 }
 
 // -------------------------------- post tags --------------------------------- //

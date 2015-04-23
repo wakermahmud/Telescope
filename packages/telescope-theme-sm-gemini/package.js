@@ -35,6 +35,8 @@ Package.onUse(function (api) {
       'lib/client/scss/modules/_mobile_nav.scss',
       'lib/client/scss/modules/_posts.scss',
       'lib/client/scss/modules/_search.scss',
+      'lib/client/scss/modules/_user-profile.scss',
+      'lib/client/scss/modules/_users.scss',
 
       // partials
       'lib/client/scss/partials/_colors.scss',
