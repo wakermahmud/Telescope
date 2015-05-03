@@ -34,11 +34,26 @@
 		}
 	}
 }
+.post-meta {
+	a {
+		&:link,
+		&:visited,
+		&:active {
+			font-weight: normal;
+		}
+		&:hover {
+			color: sienna;
+			text-decoration: underline;
+		}
+	}
+}
 // -------------------------------- post modules --------------------------------- //
 
 .post-upvote {
 	text-align: center;
 	font-size: 11px;
+	color: $main;
+	font-weight: bold;
     .upvote-link {
         transform: scale(1.5);
         .icon-upvote{

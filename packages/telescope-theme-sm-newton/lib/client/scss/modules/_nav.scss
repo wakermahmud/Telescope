@@ -3,7 +3,15 @@
 
 .top-nav{
 	.header{
-		background-color: burlywood;
+		background-color: $main;
+	}
+	.logo{
+		letter-spacing: 8px;
+		text-transform: uppercase;
+		text-shadow: -1px -1px rgba(0, 0, 0, 0.33);
+		@include medium-large{
+			font-size:19px;
+		}
 	}
 }
 
