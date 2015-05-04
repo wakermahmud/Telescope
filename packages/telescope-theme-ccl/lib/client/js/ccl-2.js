@@ -1,4 +1,0 @@
-primaryNav = [
-  'viewsMenu',
-  'adminMenu'
-];
